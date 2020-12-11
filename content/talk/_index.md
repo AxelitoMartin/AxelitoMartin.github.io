@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: All Talks & Workshops
+title: Recent & Upcoming Talks
 view: 2
 ---
