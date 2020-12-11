@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Axel S. Martin | Home</title>
+    <link>https://axelitomartin_test.github.io/author/axel-s.-martin/</link>
+      <atom:link href="https://axelitomartin_test.github.io/author/axel-s.-martin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Axel S. Martin</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://axelitomartin_test.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Axel S. Martin</title>
+      <link>https://axelitomartin_test.github.io/author/axel-s.-martin/</link>
+    </image>
+    
+    <item>
+      <title>OncoCast</title>
+      <link>https://axelitomartin_test.github.io/software/oncocast/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/software/oncocast/</guid>
+      <description>&lt;h1 id=&#34;oncocast-r-package&#34;&gt;&lt;code&gt;OncoCast&lt;/code&gt; R package&lt;/h1&gt;
+&lt;!-- badges: start --&gt;
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/AxelitoMartin/OncoCast&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://travis-ci.com/AxelitoMartin/OncoCast.svg?branch=development&#34; alt=&#34;Travis buildstatus&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://codecov.io/gh/AxelitoMartin/OncoCast?branch=development&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://codecov.io/gh/AxelitoMartin/OncoCast/branch/development/graph/badge.svg&#34; alt=&#34;Codecov testcoverage&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://zenodo.org/badge/latestdoi/211392347&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://zenodo.org/badge/211392347.svg&#34; alt=&#34;DOI&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!-- badges: end --&gt;
+&lt;p&gt;Please find all the package&amp;rsquo;s resources on it&amp;rsquo;s &lt;a href=&#34;https://axelitomartin.github.io/OncoCast&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;an-ensemble-learning-approach-for-outcome-prediction-in-precision-oncology-setting&#34;&gt;An Ensemble Learning Approach for Outcome Prediction in Precision Oncology Setting&lt;/h2&gt;
+&lt;p&gt;Ensemble learner framework for survival outcome prediction and
+stratification for high dimension data. Originally developed for cancer
+genomics with delayed entry in the risk set in mind, and thus can adjust
+for left-truncation. OncoCast enables users to easily perform one or
+multiple machine learning survival analyses at once and explore and
+visualize the resulting output.&lt;/p&gt;
+&lt;h2 id=&#34;installing-oncocast&#34;&gt;Installing &lt;code&gt;OncoCast&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;OncoCast&lt;/code&gt; has some dependencies that will be installed if they are not
+found in your library. When installing from github a prompt in the
+console may ask if you want to install the binaries for curl v4.0
+instead of 3.3. There is no need to update it for the package to work
+properly.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;AxelitoMartin/OncoCast&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you wish to use the development version of the package please use:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;remotes::install_github(&amp;quot;AxelitoMartin/OncoCast&amp;quot;, ref = &amp;quot;development&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;using-oncocast&#34;&gt;Using &lt;code&gt;OncoCast&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;We recommend users to walk through the companion website to this package
+before their first use of the method. They will be guided through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/OncoCast/articles/OncoCast-Data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Generating data in a ready for analysis
+format&lt;/strong&gt;&lt;/a&gt;
+where the users will be guided on how to format their data to use
+&lt;code&gt;OncoCast&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/OncoCast/articles/Ensemble-Learner.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Performing an ensemble learning
+run&lt;/strong&gt;&lt;/a&gt;
+through a guide of the different machine learning algorithms
+available and how to create an ensemble model.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/OncoCast/articles/Risk-Prediction.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Generating comprehensible
+results&lt;/strong&gt;&lt;/a&gt;
+with a tutorial on how to explore the predicted risk score of
+patients in the dataset, the prognostic power of the ensemble model,
+the importance of each feature of interest and how to optimize
+creation of risk groups in clinically meaningful subsets.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/OncoCast/articles/Online-Tools.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Using web-based interactive
+applications&lt;/strong&gt;&lt;/a&gt;
+to simplify the exploration of results and sharing them
+collaborators.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;oncocast-online&#34;&gt;&lt;code&gt;OncoCast&lt;/code&gt; Online&lt;/h2&gt;
+&lt;p&gt;There exist a version of OncoCast completely web-based requiring no
+coding skills and minimal inputs to create and explore an ensemble
+model. It can be found through this &lt;a href=&#34;https://axelitomartin.shinyapps.io/OncoCast/?_ga=2.133036616.733046146.1606492754-1896886074.1572897510&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;online RShiny
+application&lt;/strong&gt;&lt;/a&gt;.
+The user will only be asked to input the dataset they wish to study and
+the method they want to use to create the emsemble model.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>gnomeR</title>
+      <link>https://axelitomartin_test.github.io/software/gnomer/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/software/gnomer/</guid>
+      <description>&lt;h1 id=&#34;gnomer-r-package&#34;&gt;&lt;code&gt;gnomeR&lt;/code&gt; R package&lt;/h1&gt;
+&lt;!-- badges: start --&gt;
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/AxelitoMartin/gnomeR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://travis-ci.com/AxelitoMartin/gnomeR.svg?branch=development&#34; alt=&#34;Travis buildstatus&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://codecov.io/gh/AxelitoMartin/gnomeR?branch=development&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://codecov.io/gh/AxelitoMartin/gnomeR/branch/development/graph/badge.svg&#34; alt=&#34;Codecov testcoverage&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://doi.org/10.5281/zenodo.4171636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://zenodo.org/badge/DOI/10.5281/zenodo.4171636.svg&#34; alt=&#34;DOI&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!-- badges: end --&gt;
+&lt;p&gt;Please find all the package&amp;rsquo;s resources on it&amp;rsquo;s &lt;a href=&#34;https://axelitomartin.github.io/OncoCast&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;gnomeR&lt;/code&gt; package provides a consistent framework for genetic data
+processing, visualization and analysis. This is primarily targeted to
+IMPACT datasets but can also be applied to any genomic data provided by
+CbioPortal.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/karissawhiting/cbioportalr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Dowloading and gathering data from
+CbioPortal&lt;/strong&gt;&lt;/a&gt; through
+an integrated API using simply the sample IDs of the samples of
+interests or the name of the study to retrive all samples in that
+study. A separate package &lt;code&gt;cbioportalr&lt;/code&gt; was developed independently.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/gnomeR/articles/Data-processing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Processing genomic
+data&lt;/strong&gt;&lt;/a&gt;
+retrieved for mutations (MAF file), fusions (MAF file) and
+copy-number alterations (and when available segmentation files) into
+an analysis ready format.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/gnomeR/articles/Visualizations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Visualization of the processed
+data&lt;/strong&gt;&lt;/a&gt;
+provided through MAF file summaries, OncoPrints and heatmaps.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/gnomeR/articles/Analizing-genomic-data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Analyzing the processed
+data&lt;/strong&gt;&lt;/a&gt;
+for association with binary, continuous and survival outcome.
+Including further visualiztion to improve understanding of the
+results.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;You can install &lt;code&gt;gnomeR&lt;/code&gt; from &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# install.packages(&amp;quot;devtools&amp;quot;)
+devtools::install_github(&amp;quot;AxelitoMartin/gnomeR&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Similarly for those who wish to explore the development version of
+&lt;code&gt;gnomeR&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;devtools::install_github(&amp;quot;AxelitoMartin/gnomeR&amp;quot;, ref = &amp;quot;development&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Along with its companion package for cbioPortal data download:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;devtools::install_github(&amp;quot;karissawhiting/cbioportalr&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>genomeVerse</title>
+      <link>https://axelitomartin_test.github.io/software/genomeverse/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/software/genomeverse/</guid>
+      <description>&lt;h1 id=&#34;genomeverse-framework-for-genomic-data-processing-and-analysis&#34;&gt;&lt;code&gt;genomeVerse&lt;/code&gt;: Framework for Genomic data Processing and Analysis&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;genomeVerse&lt;/code&gt; is an umbrella package for genomic data processing and analysis with the &lt;code&gt;genomeVerse&lt;/code&gt; ecosystem of R packages developed in the department of &lt;a href=&#34;https://www.mskcc.org/departments/epidemiology-biostatistics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Epidemiology &amp;amp; Biostatistics at Memorial Sloan Kettering Cancer Center&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;library(genomeVerse)&lt;/code&gt; loads the following packages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin.github.io/gnomeR/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;gnomeR&lt;/strong&gt;&lt;/a&gt; for data downloading and processing from &lt;a href=&#34;https://www.cbioportal.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cBioPortal&lt;/a&gt; a genomic tool distributed by Memorial Sloan Kettering Cancer Center. The source code can be found on &lt;a href=&#34;https://github.com/AxelitoMartin/gnomeR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arorarshi.github.io/panelmap/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;panelmap&lt;/strong&gt;&lt;/a&gt; creates panels for summarizing binary data, categorical data (more than 2 categories) and continuous data for known groups. &lt;code&gt;panelmap&lt;/code&gt; is a visual aid to understand associations and trends in data instead from tedious tables and trying to infer multiple plots. The source code can be found on &lt;a href=&#34;https://github.com/arorarshi/panelmap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/arorarshi/survClust&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;survClust&lt;/strong&gt;&lt;/a&gt; an outcome weighted supervised clustering algorithm, designed to classify patients according to their molecular as well as time-event or end point of interest. We present classification of samples on molecular data supervised by time-event data like Overall Survival (OS), Progression Free Survival etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/AxelitoMartin/OncoCast&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;OncoCast&lt;/strong&gt;&lt;/a&gt; an ensemble learner for survival prediction and stratification with improved interface. Allows for multiple machine learning to be applied to a high-dimensional data set with survival outcome (including left-truncated data).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bioconductor.org/packages/release/bioc/html/ensembldb.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;iClusterPlus&lt;/strong&gt;&lt;/a&gt; Programs iClusterPlus and iClusterBayes are developed for integrative clustering analysis of multi-type genomic data, which are significant extension of the iCluster program (Shen, Olshen and Ladanyi, 2009). Multi-type genomic data arise from the experiments where biological samples (e.g., tumor samples) are analyzed by multiple techniques, for instance, array comparative genomic hybridization (aCGH), gene expression microarray, RNA-seq and DNA-seq, and so on. Examples of these data can be obtained from the Cancer Genome Atlas (TCGA) (&lt;a href=&#34;http://cancergenome.nih.gov/)&#34;&gt;http://cancergenome.nih.gov/)&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# install.packages(&amp;quot;devtools&amp;quot;)
+devtools::install_github(&amp;quot;AxelitoMartin/genomeVerse&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Harnessing Clinical Sequencing Data for Survival Stratification of Patients With Metastatic Lung Adenocarcinomas</title>
+      <link>https://axelitomartin_test.github.io/publication/harnessing_oncocast/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/publication/harnessing_oncocast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Display Jupyter Notebooks with Academic</title>
+      <link>https://axelitomartin_test.github.io/post/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/post/jupyter/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
+Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Welcome to Academic!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
+&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
+&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+jupyter lab index.ipynb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
+&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
+&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: My post&#39;s title
+date: 2019-09-01
+
+# Put any other Academic metadata here...
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Edit the metadata of your post, using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
+&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
+&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Genetic variants and cognitive functions in patients with brain tumors</title>
+      <link>https://axelitomartin_test.github.io/publication/brain_variants/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/publication/brain_variants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of the canid Y-chromosome phylogeny using short-read sequencing data reveals the presence of distinct haplogroups among Neolithic European dogs</title>
+      <link>https://axelitomartin_test.github.io/publication/dog_y/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/publication/dog_y/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic: the website builder for Hugo</title>
+      <link>https://axelitomartin_test.github.io/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/post/getting-started/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;👉 &lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📚 &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👥 &lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@source_themes&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💡 &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;❤️ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
+&lt;ul&gt;
+&lt;li&gt;☕️ &lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💵 &lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖼️ &lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👕 &lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👩‍💻 &lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-academic-is-mobile-first-with-a-responsive-design-to-ensure-that-your-site-looks-stunning-on-every-device&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
+
+
+  &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully &lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

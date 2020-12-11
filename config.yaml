@@ -1,6 +1,6 @@
 theme: starter-academic
 title: Home
-baseurl: https://axelitomartin_test.github.io/
+baseurl: /
 copyright: ''
 enableGitInfo: no
 defaultContentLanguage: en

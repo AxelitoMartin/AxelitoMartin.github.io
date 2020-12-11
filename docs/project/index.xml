@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Home</title>
+    <link>https://axelitomartin_test.github.io/project/</link>
+      <atom:link href="https://axelitomartin_test.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://axelitomartin_test.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>https://axelitomartin_test.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>IMSCO, Lake Tahoe, Nevada (2019).</title>
+      <link>https://axelitomartin_test.github.io/project/imsco/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/project/imsco/</guid>
+      <description>&lt;p&gt;I had the pleasure to present my work on OncoCast at the International Symposium on Mathematical and Computational Oncology (IMSCO) in 2019. My talk summarised the delayed entry issue found in genomic survival dataset and how I modified well known machine learning algorithms to account for this bias. Further explaining the underlying mechanisms of the ensemble learning framework of OncoCast, simulation results and a real data example. Slides can be found below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+  &lt;i class=&#34;fas fa-download  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Download my &lt;a href=&#34;https://axelitomartin_test.github.io/media/AxelMartin_OncoCast_IMSCO.pptx&#34; target=&#34;_blank&#34;&gt;presentation&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Joint Statistical Meetings, Denver, Colorado (2019).</title>
+      <link>https://axelitomartin_test.github.io/project/jsm_2019/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/project/jsm_2019/</guid>
+      <description>&lt;p&gt;I presented an early version of the &lt;code&gt;OncoCast&lt;/code&gt; package at the Joint Statistical Meetings in 2019. Please refer to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+  &lt;i class=&#34;fas fa-download  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Download my &lt;a href=&#34;https://axelitomartin_test.github.io/media/JSM_presentation.pdf&#34; target=&#34;_blank&#34;&gt;presentation&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+  &lt;i class=&#34;fas fa-download  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Download my &lt;a href=&#34;https://axelitomartin_test.github.io/media/JSM_poster.pdf&#34; target=&#34;_blank&#34;&gt;poster&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to RShiny.</title>
+      <link>https://axelitomartin_test.github.io/project/shiny_tutorial1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/project/shiny_tutorial1/</guid>
+      <description>&lt;p&gt;Building statistical tools that enable scientists without a background in statistics or computer science to perform simple statistical analysis in a accessible manner. R Shiny apps are also particularly useful when the output of analysis is large and complicated to to navigate in a markdown report. It enables to user to select directly the output of interest at any time and visioning it in a concise manner.&lt;/p&gt;
+&lt;p&gt;I have been trying to encourage my coworkers to embrace this idea when presenting statistical results to doctors as they usually have very little knowledge about R but love exploring every detail of an analysis. The syntax of Shiny can be a bit counter intuitive at first but it will grow on you as discover it’s many functionalities and marvel in your own progress!&lt;/p&gt;
+&lt;p&gt;I wrote a quick introduction to R Shiny and a full set of documents and code with a couple apps as examples.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://axelitomartin_test.github.io/html/ShinyR.html&#34; target=&#34;_blank&#34;&gt;Introduction Markdown&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+  &lt;i class=&#34;fas fa-download  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Download the &lt;a href=&#34;https://axelitomartin_test.github.io/media/ShinyPrez.zip&#34; target=&#34;_blank&#34;&gt;full set of documents&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

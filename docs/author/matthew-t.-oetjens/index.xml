@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matthew T. Oetjens | Home</title>
+    <link>https://axelitomartin_test.github.io/author/matthew-t.-oetjens/</link>
+      <atom:link href="https://axelitomartin_test.github.io/author/matthew-t.-oetjens/index.xml" rel="self" type="application/rss+xml" />
+    <description>Matthew T. Oetjens</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://axelitomartin_test.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Matthew T. Oetjens</title>
+      <link>https://axelitomartin_test.github.io/author/matthew-t.-oetjens/</link>
+    </image>
+    
+    <item>
+      <title>Analysis of the canid Y-chromosome phylogeny using short-read sequencing data reveals the presence of distinct haplogroups among Neolithic European dogs</title>
+      <link>https://axelitomartin_test.github.io/publication/dog_y/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://axelitomartin_test.github.io/publication/dog_y/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
