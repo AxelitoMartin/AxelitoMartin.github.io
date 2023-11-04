@@ -42,7 +42,8 @@ title: Axel S. Martin
 
 I am a PhD student in Biostatistics at [New York University](https://publichealth.nyu.edu/department/biostatistics) under the supervision of [Michele Santacaterrina](https://michelesantacatterina.github.io/) and [Ivan Diaz](https://www.idiaz.xyz/).
 
-My research focuses on developing causal inference methods for transportability and generalization of treatment specific survival curves, longitudinal continuous treatment effect and optimized treatment regimes. 
+My research focuses methodological development of novel causal inference methods. My primary interests center around developing doubly-robust estimator theory for transportability and generalization of treatment specific survival curves, and developing doubly-robust estimators in the context of repeated continuous/factorial exposures effects.
+
 
 Prior to joining NYU for a doctoral program I was a research biostatistician at [Memorial Sloan Kettering cancer center](https://www.mskcc.org/departments/epidemiology-biostatistics) (MSKCC) in New-York city in the department of Epidemiology & Biostatistics. 
 
